@@ -28,10 +28,10 @@
 //
 
 #import "CXMLDocument.h"
-#import "CXMLDocument_CreationExtensions.h"
+#import "Creation/CXMLDocument_CreationExtensions.h"
 #import "CXMLElement.h"
 #import "CXMLElement_CreationExtensions.h"
 #import "CXMLElement_ElementTreeExtensions.h"
 #import "CXMLNode.h"
-#import "CXMLNode_CreationExtensions.h"
+#import "Creation/CXMLNode_CreationExtensions.h"
 #import "CXMLNode_XPathExtensions.h"
