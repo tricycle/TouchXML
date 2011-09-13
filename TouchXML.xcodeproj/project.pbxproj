@@ -947,6 +947,124 @@
 			};
 			name = Coverage;
 		};
+		B1CBBEA7141EE10F0011D9A7 /* Ad-Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				SDKROOT = macosx;
+			};
+			name = "Ad-Hoc";
+		};
+		B1CBBEA8141EE10F0011D9A7 /* Ad-Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = All;
+				ZERO_LINK = NO;
+			};
+			name = "Ad-Hoc";
+		};
+		B1CBBEA9141EE10F0011D9A7 /* Ad-Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Foundation.framework/Headers/Foundation.h";
+				HEADER_SEARCH_PATHS = (
+					/usr/include/tidy,
+					/usr/include/libxml2,
+				);
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ltidy",
+				);
+				PRODUCT_NAME = TouchXML_Demo;
+				ZERO_LINK = NO;
+			};
+			name = "Ad-Hoc";
+		};
+		B1CBBEAA141EE10F0011D9A7 /* Ad-Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(NATIVE_ARCH)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Foundation.framework/Headers/Foundation.h";
+				HEADER_SEARCH_PATHS = (
+					/usr/include/tidy,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = Support/UnitTests/Resources/Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ltidy",
+				);
+				PRODUCT_NAME = TouchXML_UnitTests;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = "Ad-Hoc";
+		};
+		B1CBBEAB141EE10F0011D9A7 /* Ad-Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				HEADER_SEARCH_PATHS = (
+					/usr/include/tidy,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = Support/Validator/Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ltidy",
+				);
+				PRODUCT_NAME = Validator;
+				ZERO_LINK = NO;
+			};
+			name = "Ad-Hoc";
+		};
+		B1CBBEAC141EE10F0011D9A7 /* Ad-Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Source/TouchXML-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Ad-Hoc";
+		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -977,6 +1095,7 @@
 			buildConfigurations = (
 				451E6E361152EB4B0024ABA5 /* Debug */,
 				451E6E371152EB4B0024ABA5 /* Release */,
+				B1CBBEAB141EE10F0011D9A7 /* Ad-Hoc */,
 				451E6E381152EB4B0024ABA5 /* Coverage */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -987,6 +1106,7 @@
 			buildConfigurations = (
 				456A848B0D81DB06000E29C9 /* Debug */,
 				456A848C0D81DB06000E29C9 /* Release */,
+				B1CBBEA9141EE10F0011D9A7 /* Ad-Hoc */,
 				4533AB0B0DA4203C0028B909 /* Coverage */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -997,6 +1117,7 @@
 			buildConfigurations = (
 				457941010D82217800EB2D22 /* Debug */,
 				457941020D82217800EB2D22 /* Release */,
+				B1CBBEAA141EE10F0011D9A7 /* Ad-Hoc */,
 				4533AB0C0DA4203C0028B909 /* Coverage */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1007,6 +1128,7 @@
 			buildConfigurations = (
 				457941050D82219400EB2D22 /* Debug */,
 				457941060D82219400EB2D22 /* Release */,
+				B1CBBEA8141EE10F0011D9A7 /* Ad-Hoc */,
 				4533AB0A0DA4203C0028B909 /* Coverage */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1017,6 +1139,7 @@
 			buildConfigurations = (
 				B1116E1F13DF99F700E0FE08 /* Debug */,
 				B1116E2013DF99F700E0FE08 /* Release */,
+				B1CBBEAC141EE10F0011D9A7 /* Ad-Hoc */,
 				B1116E2113DF99F700E0FE08 /* Coverage */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1027,6 +1150,7 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+				B1CBBEA7141EE10F0011D9A7 /* Ad-Hoc */,
 				4533AB090DA4203C0028B909 /* Coverage */,
 			);
 			defaultConfigurationIsVisible = 0;
