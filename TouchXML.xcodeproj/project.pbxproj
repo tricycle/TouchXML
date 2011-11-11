@@ -82,6 +82,8 @@
 		B1116E3013DF9CEC00E0FE08 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AA86A50DAB1D08008827B0 /* CXMLNode_XPathExtensions.m */; };
 		B1116E3113DF9CEC00E0FE08 /* CXMLNamespaceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 030E27C81202762F008B53A4 /* CXMLNamespaceNode.m */; };
 		B119B7D213DF9E9F00DEC64E /* TouchXML-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = B119B7D113DF9E9F00DEC64E /* TouchXML-Prefix.pch */; };
+		B1FC39D2146CAFFB00AC11FD /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 458CE9C60F9C12BB009EF591 /* CXMLDocument_CreationExtensions.m */; };
+		B1FC39D4146CAFFE00AC11FD /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 458CE9C80F9C12BB009EF591 /* CXMLNode_CreationExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -576,6 +578,8 @@
 				B1116E2F13DF9CEC00E0FE08 /* CXMLNode_PrivateExtensions.m in Sources */,
 				B1116E3013DF9CEC00E0FE08 /* CXMLNode_XPathExtensions.m in Sources */,
 				B1116E3113DF9CEC00E0FE08 /* CXMLNamespaceNode.m in Sources */,
+				B1FC39D2146CAFFB00AC11FD /* CXMLDocument_CreationExtensions.m in Sources */,
+				B1FC39D4146CAFFE00AC11FD /* CXMLNode_CreationExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
