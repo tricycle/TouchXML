@@ -951,6 +951,124 @@
 			};
 			name = Coverage;
 		};
+		B138D8EE153807FB00D1BCCA /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				SDKROOT = macosx;
+			};
+			name = AppStore;
+		};
+		B138D8EF153807FB00D1BCCA /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = All;
+				ZERO_LINK = NO;
+			};
+			name = AppStore;
+		};
+		B138D8F0153807FB00D1BCCA /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Foundation.framework/Headers/Foundation.h";
+				HEADER_SEARCH_PATHS = (
+					/usr/include/tidy,
+					/usr/include/libxml2,
+				);
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ltidy",
+				);
+				PRODUCT_NAME = TouchXML_Demo;
+				ZERO_LINK = NO;
+			};
+			name = AppStore;
+		};
+		B138D8F1153807FB00D1BCCA /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(NATIVE_ARCH)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Foundation.framework/Headers/Foundation.h";
+				HEADER_SEARCH_PATHS = (
+					/usr/include/tidy,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = Support/UnitTests/Resources/Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ltidy",
+				);
+				PRODUCT_NAME = TouchXML_UnitTests;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = AppStore;
+		};
+		B138D8F2153807FB00D1BCCA /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				HEADER_SEARCH_PATHS = (
+					/usr/include/tidy,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = Support/Validator/Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ltidy",
+				);
+				PRODUCT_NAME = Validator;
+				ZERO_LINK = NO;
+			};
+			name = AppStore;
+		};
+		B138D8F3153807FB00D1BCCA /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Source/TouchXML-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AppStore;
+		};
 		B1CBBEA7141EE10F0011D9A7 /* Ad-Hoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1099,66 +1217,72 @@
 			buildConfigurations = (
 				451E6E361152EB4B0024ABA5 /* Debug */,
 				451E6E371152EB4B0024ABA5 /* Release */,
+				B138D8F2153807FB00D1BCCA /* AppStore */,
 				B1CBBEAB141EE10F0011D9A7 /* Ad-Hoc */,
 				451E6E381152EB4B0024ABA5 /* Coverage */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		456A84D90D81DB2E000E29C9 /* Build configuration list for PBXNativeTarget "TouchXML_Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				456A848B0D81DB06000E29C9 /* Debug */,
 				456A848C0D81DB06000E29C9 /* Release */,
+				B138D8F0153807FB00D1BCCA /* AppStore */,
 				B1CBBEA9141EE10F0011D9A7 /* Ad-Hoc */,
 				4533AB0B0DA4203C0028B909 /* Coverage */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		457941030D82217800EB2D22 /* Build configuration list for PBXNativeTarget "TouchXML_UnitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				457941010D82217800EB2D22 /* Debug */,
 				457941020D82217800EB2D22 /* Release */,
+				B138D8F1153807FB00D1BCCA /* AppStore */,
 				B1CBBEAA141EE10F0011D9A7 /* Ad-Hoc */,
 				4533AB0C0DA4203C0028B909 /* Coverage */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		4579410B0D8221C000EB2D22 /* Build configuration list for PBXAggregateTarget "All" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				457941050D82219400EB2D22 /* Debug */,
 				457941060D82219400EB2D22 /* Release */,
+				B138D8EF153807FB00D1BCCA /* AppStore */,
 				B1CBBEA8141EE10F0011D9A7 /* Ad-Hoc */,
 				4533AB0A0DA4203C0028B909 /* Coverage */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		B1116E2213DF99F700E0FE08 /* Build configuration list for PBXNativeTarget "TouchXML" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B1116E1F13DF99F700E0FE08 /* Debug */,
 				B1116E2013DF99F700E0FE08 /* Release */,
+				B138D8F3153807FB00D1BCCA /* AppStore */,
 				B1CBBEAC141EE10F0011D9A7 /* Ad-Hoc */,
 				B1116E2113DF99F700E0FE08 /* Coverage */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TouchXML" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+				B138D8EE153807FB00D1BCCA /* AppStore */,
 				B1CBBEA7141EE10F0011D9A7 /* Ad-Hoc */,
 				4533AB090DA4203C0028B909 /* Coverage */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
