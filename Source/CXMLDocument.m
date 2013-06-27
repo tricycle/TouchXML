@@ -40,6 +40,8 @@
 #import "CTidy.h"
 #endif /* TOUCHXMLUSETIDY */
 
+static const xmlParserOption kParserOptions = XML_PARSE_NONET | XML_PARSE_NOERROR | XML_PARSE_NOWARNING | XML_PARSE_PEDANTIC;
+
 @implementation CXMLDocument
 
 - (id)initWithXMLString:(NSString *)inString options:(NSUInteger)inOptions error:(NSError **)outError
@@ -60,7 +62,7 @@
 #endif
         NSError *theError = NULL;
 
-        xmlDocPtr theDoc = xmlParseDoc((xmlChar *)[inString UTF8String]);
+        xmlDocPtr theDoc = xmlReadDoc((const xmlChar *)[inString UTF8String], NULL, "utf-8", kParserOptions);
         if (theDoc != NULL)
         {
             _node = (xmlNodePtr)theDoc;
@@ -127,7 +129,7 @@
                 CFStringEncoding cfenc = CFStringConvertNSStringEncodingToEncoding(encoding);
                 CFStringRef cfencstr = CFStringConvertEncodingToIANACharSetName(cfenc);
                 const char *enc = CFStringGetCStringPtr(cfencstr, 0);
-                theDoc = xmlReadMemory([inData bytes], [inData length], NULL, enc, XML_PARSE_RECOVER | XML_PARSE_NOWARNING);
+                theDoc = xmlReadMemory([inData bytes], [inData length], NULL, enc, kParserOptions);
             }
             
             if (theDoc != NULL && xmlDocGetRootElement(theDoc) != NULL)
